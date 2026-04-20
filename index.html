@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alphatrue shop｜中古車の高価買取・販売・パーツ取付｜東京都八王子市</title>
+  <meta name="description" content="alphatrue shop（アルファートゥルーショップ）は東京都八王子市の中古車専門店です。LINEで無料査定、高価買取、オークション代行、ドラレコ・ディスプレイオーディオ取付など車に関するお悩みを真摯に解決します。">
+  <meta name="keywords" content="中古車,買取,査定,八王子,東京,パーツ取付,ドラレコ,ディスプレイオーディオ,オークション代行">
+  <link rel="canonical" href="https://alphatrueshop.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="alphatrue shop｜中古車の高価買取・販売・パーツ取付｜東京都八王子市">
+  <meta property="og:description" content="中古車の高価買取・販売・オークション代行・パーツ取付。LINEで無料査定受付中。東京都八王子市。">
+  <meta property="og:url" content="https://alphatrueshop.com/">
+  <meta property="og:site_name" content="alphatrue shop">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #1a1a2e;
+      --accent: #e94560;
+      --accent2: #0f3460;
+      --white: #ffffff;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+      --dark: #212529;
+      --border: #dee2e6;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+      color: var(--dark);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(26, 26, 46, 0.97);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+
+    .logo span { color: var(--accent); }
+
+    nav { display: flex; gap: 4px; }
+
+    nav a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.82rem;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .nav-cta {
+      background: var(--accent) !important;
+      color: var(--white) !important;
+      font-weight: 600;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* ===== HERO ===== */
+    #home {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 60%, #162447 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #home::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(233,69,96,0.2);
+      border: 1px solid rgba(233,69,96,0.5);
+      color: #ff8fa3;
+      font-size: 0.78rem;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero-title .accent { color: var(--accent); }
+
+    .hero-tagline {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .hero-sub {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 40px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.25s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(233,69,96,0.4);
+    }
+
+    .btn-primary:hover {
+      background: #c73652;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(233,69,96,0.5);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* ===== SECTIONS COMMON ===== */
+    section { padding: 80px 20px; }
+    section:nth-child(even) { background: var(--light); }
+
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-header { text-align: center; margin-bottom: 56px; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+
+    .section-desc {
+      font-size: 0.97rem;
+      color: var(--gray);
+      margin-top: 12px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== SERVICES ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 36px 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--accent);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+
+    .service-icon {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .service-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* ===== APPRAISAL ===== */
+    .appraisal-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .step-card {
+      text-align: center;
+      padding: 32px 20px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      position: relative;
+    }
+
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+
+    .step-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .step-card p {
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+
+    .info-box {
+      background: linear-gradient(135deg, #fff5f7, #fff);
+      border: 1px solid #ffd6de;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 32px;
+      font-size: 0.9rem;
+      color: var(--dark);
+    }
+
+    .info-box strong { color: var(--accent); }
+
+    /* ===== PURCHASE ===== */
+    .purchase-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 24px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), #c73652);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .feature-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .feature-body p {
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* ===== PARTS ===== */
+    .parts-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .part-item {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 28px 24px;
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+
+    .part-item h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .part-item p {
+      font-size: 0.87rem;
+      color: var(--gray);
+    }
+
+    /* ===== NEWS ===== */
+    .news-list { display: flex; flex-direction: column; gap: 16px; }
+
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 24px;
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .news-date {
+      flex-shrink: 0;
+      font-size: 0.82rem;
+      color: var(--gray);
+      min-width: 80px;
+      padding-top: 2px;
+    }
+
+    .news-badge {
+      flex-shrink: 0;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(233,69,96,0.1);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .news-text { font-size: 0.92rem; color: var(--dark); }
+
+    /* ===== COMPANY ===== */
+    .company-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .company-table { width: 100%; border-collapse: collapse; }
+
+    .company-table tr { border-bottom: 1px solid var(--border); }
+
+    .company-table th {
+      text-align: left;
+      padding: 14px 0;
+      font-size: 0.85rem;
+      color: var(--gray);
+      font-weight: 600;
+      width: 40%;
+    }
+
+    .company-table td {
+      padding: 14px 0;
+      font-size: 0.92rem;
+      color: var(--dark);
+    }
+
+    .company-philosophy {
+      background: linear-gradient(135deg, var(--primary), var(--accent2));
+      border-radius: 16px;
+      padding: 36px;
+      color: var(--white);
+    }
+
+    .company-philosophy h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #ff8fa3;
+    }
+
+    .company-philosophy p {
+      font-size: 0.92rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.88);
+    }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--primary); }
+    #contact .section-title { color: var(--white); }
+    #contact .section-desc { color: rgba(255,255,255,0.6); }
+    #contact .section-label { color: #ff8fa3; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 32px 28px;
+      text-align: center;
+      transition: background 0.25s;
+    }
+
+    .contact-card:hover { background: rgba(255,255,255,0.12); }
+
+    .contact-card .icon { font-size: 2.2rem; margin-bottom: 16px; }
+
+    .contact-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 50px;
+      background: var(--accent);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+
+    .contact-card a:hover { background: #c73652; }
+
+    .sns-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 48px;
+      flex-wrap: wrap;
+    }
+
+    .sns-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .sns-btn:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0d0d1a;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 0.8rem;
+      line-height: 1.9;
+    }
+
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.8); }
+
+    /* ===== MOBILE NAV OVERLAY ===== */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(26,26,46,0.98);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .mobile-nav.open { display: flex; }
+
+    .mobile-nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 14px 40px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .mobile-nav a:hover { background: rgba(255,255,255,0.08); }
+
+    .mobile-nav-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .company-grid { grid-template-columns: 1fr; }
+      section { padding: 60px 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-btns { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 280px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#home" class="logo">alpha<span>true</span> shop</a>
+    <nav>
+      <a href="#appraisal">査定</a>
+      <a href="#purchase">買取</a>
+      <a href="#auction">オークション</a>
+      <a href="#parts">パーツ取付</a>
+      <a href="#news">お知らせ</a>
+      <a href="#contact" class="nav-cta">お問い合わせ</a>
+    </nav>
+    <div class="hamburger" id="menuBtn" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="navClose">✕</button>
+  <a href="#home" onclick="closeNav()">ホーム</a>
+  <a href="#appraisal" onclick="closeNav()">査定</a>
+  <a href="#purchase" onclick="closeNav()">買取</a>
+  <a href="#auction" onclick="closeNav()">オークション代行</a>
+  <a href="#parts" onclick="closeNav()">パーツ取付</a>
+  <a href="#news" onclick="closeNav()">お知らせ</a>
+  <a href="#contact" onclick="closeNav()">お問い合わせ</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-content">
+    <div class="hero-badge">東京都八王子市 ｜ 2021年創業</div>
+    <h1 class="hero-title">alpha<span class="accent">true</span> shop</h1>
+    <p class="hero-tagline">車のお悩みを、真摯に解決します。</p>
+    <p class="hero-sub">中古車の高価買取・販売・オークション代行・パーツ取付<br>LINEで気軽に無料査定を受付中</p>
+    <div class="hero-btns">
+      <a href="#appraisal" class="btn btn-primary">&#128241; LINE無料査定</a>
+      <a href="#contact" class="btn btn-outline">&#128140; お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Services</span>
+      <h2 class="section-title">サービス一覧</h2>
+      <p class="section-desc">車に関するお悩みをワンストップで対応します</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">&#128241;</div>
+        <h3>LINE無料査定</h3>
+        <p>車検証の写真をLINEで送るだけ。まずは気軽に概算査定を受けられます。個人情報不要。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#128176;</div>
+        <h3>高価買取</h3>
+        <p>オークション相場に基づいた公正な価格で買取。他社と比較大歓迎。契約当日に即日振込。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#128663;</div>
+        <h3>オークション代行</h3>
+        <p>ディーラーオークションから理想の車を仕入れます（買取実績のあるお客様限定）。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#128295;</div>
+        <h3>パーツ取付</h3>
+        <p>シートカバー・ドライブレコーダー・ディスプレイオーディオなどの取付施工を承ります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPRAISAL -->
+<section id="appraisal">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Appraisal</span>
+      <h2 class="section-title">無料査定のご案内</h2>
+      <p class="section-desc">LINEで手軽に、または訪問にてしっかり査定いたします</p>
+    </div>
+
+    <div class="appraisal-steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>LINE友達追加</h3>
+        <p>公式LINEを友達追加してください</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>写真を送信</h3>
+        <p>車検証の写真（個人情報はマスク可）をお送りください</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>概算査定をご連絡</h3>
+        <p>オークション相場をもとに概算金額をご案内します</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>訪問査定（任意）</h3>
+        <p>ご希望の方はご自宅等へスタッフが伺い実車確認します</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <strong>&#9989; ポイント：</strong>
+      LINE査定は完全無料・個人情報不要で概算金額が分かります。訪問査定はご予約制で、東京都内および近郊対応可能です。査定後のキャンセルも自由ですので、まずはお気軽にご相談ください。
+    </div>
+  </div>
+</section>
+
+<!-- PURCHASE -->
+<section id="purchase">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Purchase</span>
+      <h2 class="section-title">高価買取の特徴</h2>
+      <p class="section-desc">オークション相場に基づいた公正価格で買取します</p>
+    </div>
+    <div class="purchase-features">
+      <div class="feature-card">
+        <div class="feature-icon">&#128176;</div>
+        <div class="feature-body">
+          <h3>相場に基づく公正価格</h3>
+          <p>ディーラーオークションの最新相場をもとに算出した金額をご提示します。他社との比較大歓迎です。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9889;</div>
+        <div class="feature-body">
+          <h3>契約当日に即日振込</h3>
+          <p>ご契約完了後、インターネット振込にてその日のうちに代金をお振込みします。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128681;</div>
+        <div class="feature-body">
+          <h3>他社比較歓迎</h3>
+          <p>複数社に査定を依頼していただいて構いません。最後の判断材料としてご利用ください。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128222;</div>
+        <div class="feature-body">
+          <h3>出張対応</h3>
+          <p>ご自宅・勤務先など、ご希望の場所へスタッフが伺います。東京都内および近郊対応。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUCTION -->
+<section id="auction">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Auction</span>
+      <h2 class="section-title">オークション代行</h2>
+      <p class="section-desc">ディーラー専用オークションから理想の車を仕入れます</p>
+    </div>
+    <div class="purchase-features">
+      <div class="feature-card">
+        <div class="feature-icon">&#128269;</div>
+        <div class="feature-body">
+          <h3>非公開オークションへのアクセス</h3>
+          <p>一般の方が購入できないディーラー専用オークションから車をお探しします。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128666;</div>
+        <div class="feature-body">
+          <h3>自宅まで納車</h3>
+          <p>ご希望の車両が落札できたら、ご自宅等への陸送も手配いたします。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128100;</div>
+        <div class="feature-body">
+          <h3>買取実績のあるお客様限定</h3>
+          <p>本サービスは当社にて買取を行ったことのあるお客様のみご利用いただけます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTS -->
+<section id="parts">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Parts &amp; Installation</span>
+      <h2 class="section-title">パーツ取付サービス</h2>
+      <p class="section-desc">車をもっと快適・安全・便利に</p>
+    </div>
+    <div class="parts-list">
+      <div class="part-item">
+        <h3>&#129694; レザーシートカバー</h3>
+        <p>お車のシートをレザーカバーで高級感ある仕上がりに。各メーカー・車種対応。</p>
+      </div>
+      <div class="part-item">
+        <h3>&#128247; ドライブレコーダー</h3>
+        <p>前後カメラタイプを中心に各種ドラレコの取付施工を承ります。配線も丁寧に処理します。</p>
+      </div>
+      <div class="part-item">
+        <h3>&#128250; ディスプレイオーディオ</h3>
+        <p>Apple CarPlay / Android Auto対応のディスプレイオーディオへの交換・取付が可能です。</p>
+      </div>
+      <div class="part-item">
+        <h3>&#128293; シートヒーター</h3>
+        <p>後付けシートヒーターの取付。冬の運転を快適にします。</p>
+      </div>
+      <div class="part-item">
+        <h3>&#128683; コーナーセンサー</h3>
+        <p>駐車時の安全をサポートするコーナーセンサーの取付施工。</p>
+      </div>
+      <div class="part-item">
+        <h3>&#128295; その他カスタム</h3>
+        <p>上記以外のパーツ取付もお気軽にご相談ください。まずはお問い合わせから。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">News</span>
+      <h2 class="section-title">最新情報</h2>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">2025.07.27</span>
+        <span class="news-badge">買取</span>
+        <span class="news-text">スバル車の買取を完了。高価買取にご満足いただけました。</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025.07.09</span>
+        <span class="news-badge">買取</span>
+        <span class="news-text">スバル車の買取完了。買戻し率の高い良コンディションの車両。</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025.06.29</span>
+        <span class="news-badge">販売</span>
+        <span class="news-text">ホンダ フィット 売却完了。</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025.06.24</span>
+        <span class="news-badge">買取</span>
+        <span class="news-text">トヨタ カローラクロス ハイブリッド Z を買取。</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025.05.15</span>
+        <span class="news-badge">パーツ取付</span>
+        <span class="news-text">ホンダ フィット｜新品タイヤ・ディスプレイオーディオ・ドラレコ・シートヒーター・コーナーセンサー取付完了。</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025.03.04</span>
+        <span class="news-badge">販売</span>
+        <span class="news-text">レクサス NX300 売却完了。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY -->
+<section id="company">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Company</span>
+      <h2 class="section-title">会社情報</h2>
+    </div>
+    <div class="company-grid">
+      <div>
+        <table class="company-table">
+          <tr>
+            <th>屋号</th>
+            <td>alphatrue shop（アルファートゥルーショップ）</td>
+          </tr>
+          <tr>
+            <th>設立</th>
+            <td>2021年10月</td>
+          </tr>
+          <tr>
+            <th>資本金</th>
+            <td>1,475万円</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒192-0364<br>東京都八王子市南大沢4-12-5-103</td>
+          </tr>
+          <tr>
+            <th>業務内容</th>
+            <td>中古車の買取・販売・整備・パーツ取付</td>
+          </tr>
+          <tr>
+            <th>古物商登録</th>
+            <td>東京都公安委員会<br>第308762416476号</td>
+          </tr>
+          <tr>
+            <th>適格請求書番号</th>
+            <td>T5810018247958</td>
+          </tr>
+          <tr>
+            <th>メール</th>
+            <td><a href="mailto:alphatrueshop@gmail.com">alphatrueshop@gmail.com</a></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <div class="company-philosophy">
+          <h3>&#128161; 社名に込めた想い</h3>
+          <p>
+            「alpha（始まり）」「true（真摯）」「shop（場所）」という3つの言葉を組み合わせた屋号です。<br><br>
+            「もっと高く売りたい」「良い車に乗り換えたい」「取付費用が高すぎる」「車のことが不安」——そうした車に関するお悩みを、私たちは<strong>真摯に</strong>向き合い解決します。<br><br>
+            できるだけ高く買取して、お得な車種に乗換えできるよう、全力でサポートします。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-desc">お気軽にご連絡ください。LINEが最も返信が早いです。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">&#128241;</div>
+        <h3>LINE（推奨）</h3>
+        <p>最も返信が早いです。写真や車検証の送付もLINEが便利です。</p>
+        <a href="https://line.me/R/ti/p/@alphatrueshop" target="_blank" rel="noopener">LINEで連絡する</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">&#128140;</div>
+        <h3>メール</h3>
+        <p>ご質問・お見積りのご依頼はメールでも受け付けています。</p>
+        <a href="mailto:alphatrueshop@gmail.com">メールを送る</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">&#128205;</div>
+        <h3>所在地</h3>
+        <p>東京都八王子市南大沢4-12-5-103<br>（来店はご予約ください）</p>
+        <a href="https://maps.google.com/?q=東京都八王子市南大沢4-12-5" target="_blank" rel="noopener">Googleマップで見る</a>
+      </div>
+    </div>
+    <div class="sns-row">
+      <a href="https://twitter.com/alphatrueshop" target="_blank" rel="noopener" class="sns-btn">&#128038; X (Twitter)</a>
+      <a href="https://instagram.com/alphatrueshop" target="_blank" rel="noopener" class="sns-btn">&#128247; Instagram</a>
+      <a href="https://line.me/R/ti/p/@alphatrueshop" target="_blank" rel="noopener" class="sns-btn">&#128241; LINE</a>
+      <a href="https://facebook.com/alphatrueshop" target="_blank" rel="noopener" class="sns-btn">&#128100; Facebook</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="font-size:1rem;font-weight:700;color:rgba(255,255,255,0.8);margin-bottom:8px;">
+    alpha<span style="color:#e94560;">true</span> shop
+  </p>
+  <p>東京都八王子市南大沢4-12-5-103｜設立 2021年10月｜資本金 1,475万円</p>
+  <p>古物商登録：東京都公安委員会 第308762416476号｜適格請求書番号：T5810018247958</p>
+  <p style="margin-top:12px;">
+    <a href="mailto:alphatrueshop@gmail.com">alphatrueshop@gmail.com</a>
+  </p>
+  <p style="margin-top:16px;">&copy; 2021 alphatrue shop. All rights reserved.</p>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const navClose = document.getElementById('navClose');
+
+  menuBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+  navClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+
+  function closeNav() { mobileNav.classList.remove('open'); }
+
+  // Active nav highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.toggle(
+            'active',
+            link.getAttribute('href') === '#' + entry.target.id
+          );
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
