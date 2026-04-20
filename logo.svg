@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" aria-label="alphatrue shop logo">
+  <rect width="400" height="400" fill="#5DD6D2"/>
+  <g transform="translate(200 160)">
+    <path d="M -55 -70 L 55 -70 L 60 -60 L 60 30 Q 60 45 50 55 L 5 95 Q 0 98 -5 95 L -50 55 Q -60 45 -60 30 L -60 -60 Z"
+          fill="#0a0a0a" stroke="#5DD6D2" stroke-width="2"/>
+    <text x="0" y="30" font-family="'Helvetica Neue', 'Arial Black', sans-serif"
+          font-size="110" font-weight="900" fill="#5DD6D2"
+          text-anchor="middle" letter-spacing="-2">A</text>
+  </g>
+  <text x="200" y="330" font-family="'Helvetica Neue', 'Arial', sans-serif"
+        font-size="58" font-weight="500" fill="#0a0a0a" text-anchor="middle">alphatrue shop</text>
+</svg>
