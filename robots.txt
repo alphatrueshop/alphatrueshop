@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://alphatrueshop.com/sitemap.xml
+Sitemap: https://alphatrue.shop/sitemap.xml
